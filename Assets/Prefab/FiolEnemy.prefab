@@ -148,8 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c67746c2211c8d429d4c851ecadad67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
+  damagCollision: 15
   move: {x: 0, y: -1, z: 0}
+  targetTags:
+  - Player
 --- !u!114 &4753916932530468863
 MonoBehaviour:
   m_ObjectHideFlags: 0

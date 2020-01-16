@@ -29,6 +29,7 @@ public class EnemyWeapon : MonoBehaviour
         Vector2 bulletForce = new Vector2(x, y);
         GameObject createBullet = Instantiate(bullet, bulletPosition, transform.rotation) as GameObject;
         createBullet.GetComponent<Rigidbody2D>().AddForce(bulletForce * bulletSpeed, ForceMode2D.Impulse);
+        createBullet.transform.SetParent(gameObject.transform);
         }   
     }
     void Update()

@@ -24,5 +24,11 @@ public class RedSmollPlasma : MonoBehaviour
 					
 	}
 
+		void OnBecameInvisible()
+    {
+        
+        Destroy(gameObject);
+    }
+
 	
 }
